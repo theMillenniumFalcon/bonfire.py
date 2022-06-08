@@ -3,7 +3,7 @@ __pycache__
 build
 dist
 
-venv
+env
 
 # mkdocs output directory
 site

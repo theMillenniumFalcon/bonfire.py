@@ -1,6 +1,6 @@
 from distutils.core import setup
 from os import path
-from hideout import __version__
+from bonfire import __version__
 
 this_dir = path.abspath(path.dirname(__file__))
 
@@ -8,18 +8,18 @@ with open(path.join(this_dir, "README.rst"), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='hideout',
-    packages=['hideout', 'hideout.utils', 'hideout.events'],
+    name='bonfire',
+    packages=['bonfire', 'bonfire.utils', 'bonfire.events'],
     version=__version__,
-    description='A Python wrapper for the hideout API.',
+    description='A Python wrapper for the bonfire API.',
     project_urls={
         "Documentation": "non extistant right now",
     },
     long_description=long_description,
     author='theMillenniumFalcon',
     author_email='nishankpr435@gmail.com',
-    url='https://github.com/theMillenniumFalcon/hideout.py',
-    download_url=f'https://github.com/theMillenniumFalcon/hideout.py/archive/{__version__}.tar.gz',
+    url='https://github.com/theMillenniumFalcon/bonfire.py',
+    download_url=f'https://github.com/theMillenniumFalcon/bonfire.py/archive/{__version__}.tar.gz',
     keywords=["dogehouse"],
     install_requires=[],
     classifiers=[

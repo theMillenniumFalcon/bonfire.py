@@ -1,14 +1,13 @@
 import asyncio
 import websockets
-from json import loads
+from json import loads, dumps
 from typing import Awaitable
 from websockets.exceptions import ConnectionClosedOK, ConnectionClosedError
-from logging import debug
+from logging import info, debug
 
 from ..utils import Repr
 from ..config.config import apiUrl, heartbeatInterval
 from ..exceptions.exceptions import NoConnectionException
-
 
 class HideoutClient(Repr):
     def __init__(self, token: str, refresh_token: str):
